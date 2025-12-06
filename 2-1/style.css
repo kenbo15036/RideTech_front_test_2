@@ -1,1 +1,53 @@
 /* ここに記載 */
+.container{
+    display: flex;
+    gap: 16px;
+}
+
+.content-box{
+    box-sizing: content-box;
+    width: 230px;
+    padding: 20px;
+    border: 2px solid #333;
+    background: #eaf4ff;
+    text-align: center;
+}
+
+.border-box{
+    box-sizing: border-box;
+    width: 230px;
+    padding: 20px;
+    border: 2px solid #333;
+    background: #ffe8e8;
+    text-align: center;
+}
+
+.block{
+    display: block;
+    border: 1px solid #333;
+    background: #f8f8f8;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.inline{
+    display: inline;
+    border: 1px solid #333;
+    background: #f8f8f8;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.inline-block{
+    display: inline-block;
+    border: 1px solid #333;
+    background: #f8f8f8;
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+.line{
+    border: 3px solid #eeeeee
+}

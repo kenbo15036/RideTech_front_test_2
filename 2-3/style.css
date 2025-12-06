@@ -1,1 +1,29 @@
 /* ここに記載 */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    }
+
+.card{
+    border: 1px solid #acacac;
+    border-radius: 2%;
+    padding: 10px;
+    flex: 1 1 200px;
+    
+}
+
+@media (max-width: 600px) {
+    .card {
+      flex: 1 1 calc(50% - 8px);  /* タブレット時は2列表示 */
+      min-width: calc(50% - 8px);
+    }
+  }
+
+@media (max-width: 480px) {
+    .card {
+      flex: 1 1 100%;  /* モバイル時は1列表示 */
+      min-width: 100%;
+    }
+  }
+  

@@ -1,1 +1,55 @@
 /* ここに記載 */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+header{
+    grid-area: header;
+    background-color: #eaf4ff;
+}
+
+header #nav{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    padding-left: 0px;
+}
+
+header #nav a{
+    text-decoration: none;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    border: 2px solid gray;
+    background-color: #f8f8f8;
+    padding: 5px;
+}
+
+.main-contents{
+    grid-area: main;
+    border: 2px solid gray;
+    padding-left: 10px;
+}
+
+footer{
+    grid-area: footer;
+    border:1px solid gray;
+    text-align: center;
+    background-color: #eaf4ff;
+    height: 50px;
+}
+
